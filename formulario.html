@@ -1,0 +1,19 @@
+<!Doctype>
+<html>
+	<head>
+		<title>Formulario</title>
+	</head>
+	<body style = "margin:0 auto;padding:10%">
+		<center>
+		<form action = "/formulario" method  = "POST">
+			<p>Ingresa tu nombre</p>
+			<input type = "text" name = "nombre" style = "width:100%">
+			<p><input type = "submit" style = "width:100%"></p>
+			<p><input type = "reset" style = "width:100%"></p>
+		</form>
+		{%if nombre != None %}
+		<p>{{nombre}}</p>
+		{% endif %}
+		</center>
+	</body>
+</hmtl>
